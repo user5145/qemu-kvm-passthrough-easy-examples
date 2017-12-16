@@ -1,5 +1,5 @@
 # qemu-kvm-passthrough-easy-examples
-will come in future
+Not finished yet
 
 ### USE AT YOUR OWN RISK
 
