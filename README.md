@@ -11,3 +11,4 @@ https://www.reddit.com/r/pcmasterrace/comments/2z0evz/gpu_passthrough_or_how_to_
 
 ## Drivers
 https://fedorapeople.org/groups/virt/virtio-win/
+https://www.spice-space.org/download.html
