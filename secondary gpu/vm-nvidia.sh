@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# gpu should works even in bios out of box if system and uefi let it
+# gpu should works even in bios out of box if host system and uefi let it to
 # kvm=off,hv_time,hv_relaxed,hv_vapic,hv_spinlocks=0x1fff,hv_vendor_id=Nvidia43FIX is for nvidia 43 error and is SUFFICIENT, tested without driver and with 388.59
 #
 # TODO
