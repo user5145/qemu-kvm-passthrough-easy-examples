@@ -4,7 +4,7 @@
 # kvm=off,hv_time,hv_relaxed,hv_vapic,hv_spinlocks=0x1fff,hv_vendor_id=Nvidia43FIX is for nvidia 43 error and is SUFFICIENT, tested without driver and with 388.59
 #
 # TODO
-# 1. to set -usbdevice use command lsusb and rewrite proper id to after host
+# 1. to set -usbdevice use command lsusb and rewrite proper id after host
 # 2. specify your ovmf uefi localization (e.g. /usr/share/edk2/ovmf/OVMF_CODE.fd) and point it as bios (-drive and -bios)
 # 3. host argument for -device should match to a gpu, which you intend to pass. Check with lspci -nn command
 # 4. addresses used there shouldn't be used by the system, replace it with random hex numbers
