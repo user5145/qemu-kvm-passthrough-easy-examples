@@ -2,7 +2,7 @@
 set -e
 #
 # ToDo
-# 1. change img to existing file image.
+# 1. change img to existing image file.
 # 2. check usb device id (e.g. with lsusb) and set it as usbId
 
 img= /home/$USER/vm.img &&

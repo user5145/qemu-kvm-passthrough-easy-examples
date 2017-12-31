@@ -2,7 +2,7 @@
 set -e
 #
 # ToDo
-# 1. change img to existing file image.
+# 1. change img to existing image file.
 # 2. specify uefi code and vars variable, you may want to store uefi vars file to keep your boot settings
 
 img= /home/$USER/vm.img &&
