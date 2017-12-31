@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 #
 # ToDo
 # 1. change drive file to existing partition e.g. /dev/sdb1.

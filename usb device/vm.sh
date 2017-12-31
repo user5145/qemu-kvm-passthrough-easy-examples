@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 #
 # ToDo
 # 1. change img to existing file image.
