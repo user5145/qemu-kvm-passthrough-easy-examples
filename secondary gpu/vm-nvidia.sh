@@ -32,7 +32,7 @@ qemu-system-x86_64 -enable-kvm -M pc-q35-2.10 -m 2000 \
     -rtc base=localtime \
     -soundhw hda \
     -device ioh3420,bus=pcie.0,addr=1c.0,multifunction=on,port=1,chassis=1,id=root.1 \
-    -device vfio-pci,host=$gpuId,bus=pcie.0,addr=08.0 \
+    -device vfio-pci,host=$gpuId,bus=pcie.0,addr=08.0,multifunction=on \
     -device vfio-pci,host=$gpuAudioId,bus=pcie.0,addr=08.1 \
     -drive file=$img,if=virtio,id=disk1,format=raw,cache=none,media=disk \
     -usb -usbdevice host:$usbId1
