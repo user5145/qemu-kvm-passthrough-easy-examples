@@ -5,9 +5,9 @@ set -e
 # 1. change img to existing image file.
 # 2. specify uefi code and vars variable, you may want to store uefi vars file to keep your boot settings
 
-img= /home/$USER/vm.img &&
-bios_code= "/usr/share/edk2/ovmf/OVMF_CODE.fd" &&
-bios_vars= "/usr/share/edk2/ovmf/OVMF_VARS.fd" &&
+img=/home/$USER/vm.img &&
+bios_code="/usr/share/edk2/ovmf/OVMF_CODE.fd" &&
+bios_vars="/usr/share/edk2/ovmf/OVMF_VARS.fd" &&
 cp $bios_vars /tmp/qemu_bios_vars &&
 
 qemu-system-x86_64 -enable-kvm -M pc-q35-2.10 -m 2000 \
