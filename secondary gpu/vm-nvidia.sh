@@ -2,7 +2,7 @@
 set -e
 # gpu should works even during POST out of box if host system and uefi let it to
 # kvm=off,hv_time,hv_relaxed,hv_vapic,hv_spinlocks=0x1fff,hv_vendor_id=Nvidia43FIX is for nvidia 43 error and is SUFFICIENT, tested without driver and with 388.59
-# for more info check dmesg, e.g. if you see something like gpu bios is shadowed you may have to provide bios as a file for gpu, but that's dangerous...
+# for more info check dmesg, if you see something like gpu bios is shadowed you may have to provide bios as a file for gpu, but that's dangerous...
 #
 # TODO
 # 1. change img to existing image file.
