@@ -2,6 +2,7 @@
 #
 # ToDo
 # 1. change drive file to existing partition e.g. /dev/sdb1.
+
 img= /dev/sdzX &&
 
 qemu-system-x86_64 -enable-kvm -M pc-q35-2.10 -m 2000 \

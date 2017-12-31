@@ -4,7 +4,6 @@
 # 1. change img to existing file image.
 # 2. check usb device id (e.g. with lsusb) and set it as usbId
 
-
 img= /home/$USER/vm.img &&
 usbId= 1d1b:0001 &&
 
