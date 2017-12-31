@@ -1,7 +1,9 @@
 #!/bin/bash
 set -e
 #
-# ToDo
+# You can force guest to create a second partition table inside passed lvm partition without affecting your host and treat it as disk inside guest.
+#
+# TODO
 # 1. change drive file to existing lvm volume.
 
 img=/dev/mapper/group-volume &&

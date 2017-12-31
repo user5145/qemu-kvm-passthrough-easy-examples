@@ -7,7 +7,8 @@ set -e
 # You may want to change QEMU_AUDIO_DRV value to "alsa" to use alsa host driver instead of pulseaudio.
 # QEMU_PA_SERVER is unnecessary then but QEMU_AUDIO_DAC_FIXED_FREQ may be if your sound cracks.
 # Set it to value used by guest, for frequency equal to 44100 hz value is 44100.
-# during 100% cpu usage your sound may crack so it is recommended to don't give all cpu power to guest
+# during 100% cpu usage your sound may crack so it is recommended to don't give all cpu power to guest.
+# More than one sound card in guest can cause problems. It is recommended to disable them.
 
 img=/home/$USER/vm.img &&
 QEMU_AUDIO_DRV=pa &&
