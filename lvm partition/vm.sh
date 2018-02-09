@@ -7,8 +7,11 @@ set -e
 # 1. change drive file to existing lvm volume.
 
 img=/dev/mapper/group-volume &&
-umount $img &&
-sync &&
+#do if mounted
+if mount | grep $img > /dev/null; then
+    umount $img &&
+    sync
+fi &&
 
 qemu-system-x86_64 -enable-kvm -M pc-q35-2.10 -m 2000 \
     -cpu host \
