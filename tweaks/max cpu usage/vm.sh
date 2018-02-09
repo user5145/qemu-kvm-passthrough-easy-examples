@@ -6,8 +6,11 @@ set -e
 # 2. set proper percentage. cpulimit increase max value about 100 per every thread in host cpu, so for one cpu with 2 threads max value is 200.
 
 img=/home/$USER/vm.img &&
-umount $img &&
-sync &&
+#do if mounted
+if mount | grep $img > /dev/null; then
+    umount $img &&
+    sync
+fi &&
 percentage=190 &&
 
 cpulimit -l $percentage qemu-system-x86_64 -enable-kvm -M pc-q35-2.10 -m 2000 \
