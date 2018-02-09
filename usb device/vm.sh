@@ -5,7 +5,7 @@ set -e
 # 1. change img to existing image file.
 # 2. check usb device id (e.g. with lsusb) and set it as usbId
 
-img= /home/$USER/vm.img &&
+img=/home/$USER/vm.img &&
 usbId=1d1b:0001 &&
 
 qemu-system-x86_64 -enable-kvm -M pc-q35-2.10 -m 2000 \
