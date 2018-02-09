@@ -6,8 +6,8 @@ set -e
 # 2. specify uefi code and vars variable, you may want to store uefi vars file to keep your boot settings
 
 img=/home/$USER/vm.img &&
-bios_code="/usr/share/edk2/ovmf/OVMF_CODE.fd" &&
-bios_vars="/usr/share/edk2/ovmf/OVMF_VARS.fd" &&
+bios_code="/usr/share/ovmf/x64/OVMF_CODE.fd" &&
+bios_vars="/usr/share/ovmf/x64/OVMF_VARS.fd" &&
 cp $bios_vars /tmp/qemu_bios_vars &&
 
 #do if mounted

@@ -15,8 +15,8 @@ set -e
 # 8. set usb device to control guest. check id with lsusb.
 
 img=/home/$USER/vm.img &&
-bios_code="/usr/share/edk2/ovmf/OVMF_CODE.fd" &&
-bios_vars="/usr/share/edk2/ovmf/OVMF_VARS.fd" &&
+bios_code="/usr/share/ovmf/x64/OVMF_CODE.fd" &&
+bios_vars="/usr/share/ovmf/x64/OVMF_VARS.fd" &&
 gpuId=6f:00.0 &&
 gpuAudioId=6f:00.1 &&
 usbId1=1d1b:0001 &&
