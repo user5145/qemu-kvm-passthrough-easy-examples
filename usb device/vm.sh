@@ -8,6 +8,12 @@ set -e
 img=/home/$USER/vm.img &&
 usbId=1d1b:0001 &&
 
+#do if mounted
+if mount | grep $img > /dev/null; then
+    umount $img &&
+    sync
+fi &&
+
 qemu-system-x86_64 -enable-kvm -M pc-q35-2.10 -m 2000 \
     -cpu host \
     -smp 1,sockets=1,cores=1,threads=1 \
