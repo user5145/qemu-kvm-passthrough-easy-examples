@@ -5,6 +5,8 @@ set -e
 # 1. change drive file to existing partition e.g. /dev/sdb1.
 
 img=/dev/sdzX &&
+umount $img &&
+sync &&
 
 qemu-system-x86_64 -enable-kvm -M pc-q35-2.10 -m 2000 \
     -cpu host \
