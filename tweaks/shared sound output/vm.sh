@@ -15,6 +15,12 @@ QEMU_AUDIO_DRV=pa &&
 userId=$(id -u) &&
 QEMU_PA_SERVER=/run/user/$userId/pulse/native &&
 
+#do if mounted
+if mount | grep $img > /dev/null; then
+    umount $img &&
+    sync
+fi &&
+
 qemu-system-x86_64 -enable-kvm -M pc-q35-2.10 -m 2000 \
     -cpu host \
     -smp 1,sockets=1,cores=1,threads=1 \
