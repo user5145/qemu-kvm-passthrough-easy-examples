@@ -7,6 +7,11 @@ set -e
 # 3. set ionice, be cautious high value can break your system. For more info read man.
 
 img=/home/$USER/vm.img &&
+#do if mounted
+if mount | grep $img > /dev/null; then
+    umount $img &&
+    sync
+fi &&
 
 ionice -c2 -n1 \
 nice -n -10 \
