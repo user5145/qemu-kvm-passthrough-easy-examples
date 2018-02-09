@@ -28,6 +28,12 @@ gpuAudioId=1:00.1 &&
 usbId1=1d1b:0001 &&
 cp $bios_vars /tmp/qemu_bios_vars &&
 
+#do if mounted
+if mount | grep $img > /dev/null; then
+    umount $img &&
+    sync
+fi &&
+
 qemu-system-x86_64 -enable-kvm -M pc-q35-2.10 -m 2000 \
     -cpu host,kvm=off,hv_time,hv_relaxed,hv_vapic,hv_spinlocks=0x1fff,hv_vendor_id=Nvidia43FIX \
     -smp 1,sockets=1,cores=1,threads=1 \
