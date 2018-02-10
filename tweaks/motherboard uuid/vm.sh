@@ -4,6 +4,7 @@ set -e
 # ToDo
 # 1. change img to existing image file.
 # 2. specify uefi code and vars variable, you may want to store uefi vars file to keep your boot settings
+# 3. change uuid to what you want or keep like it is :)
 
 img=/home/$USER/vm.img &&
 bios_code="/usr/share/ovmf/x64/OVMF_CODE.fd" &&
