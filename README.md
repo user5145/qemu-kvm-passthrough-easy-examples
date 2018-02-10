@@ -1,6 +1,5 @@
 # qemu-kvm-passthrough-easy-examples
 ### USE AT YOUR OWN RISK 
-Not finished yet  
   
 ## Drivers
 https://fedorapeople.org/groups/virt/virtio-win/  
