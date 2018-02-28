@@ -17,6 +17,7 @@ https://bufferoverflow.io/gpu-passthrough/
 http://vfio.blogspot.com/2015/05/vfio-gpu-how-to-series-part-3-host.html  
 http://vfio.blogspot.com/2015/05/vfio-gpu-how-to-series-part-4-our-first.html  
 http://vfio.blogspot.com/2015/05/vfio-gpu-how-to-series-part-5-vga-mode.html  
+https://wiki.gentoo.org/wiki/IOMMU_SWIOTLB#Generic_options  
   
 ### Hardware id  
 https://unix.stackexchange.com/questions/309955/libvirt-qemu-changing-hardware-identifiers  
