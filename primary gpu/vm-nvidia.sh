@@ -12,13 +12,13 @@ echo efi-framebuffer.0 > /sys/bus/platform/drivers/efi-framebuffer/unbind
 #
 # TODO
 # 1. change img to existing image file.
-# 2. specify uefi code and vars variable, you may want to store uefi vars file to keep your boot settings
+# 2. specify uefi_code and bios_vars variable, you may want to store bios_vars file to keep your boot settings
 # 3. device you want to pass has to use vfio driver
 # 4. host argument for -device should match to a gpu, which you want to pass. Check with lspci -nn command
 # 5. addresses in device used there shouldn't be already used by your system
-# 6. add path to file which should act as storage to -drive
-# 7. don't use spice/vnc and emulated vga, it can be detected by nvidia driver
-# 8. set usb device to control guest. check id with lsusb.
+# 6. add path to file which should act as storage for -drive
+# 7. don't use win7, it doesn't support pure uefi (without csm)
+# 8. set usb device to be controlled by guest. check id with lsusb.
 
 img=/home/$USER/vm.img &&
 bios_code="/usr/share/ovmf/x64/OVMF_CODE.fd" &&
